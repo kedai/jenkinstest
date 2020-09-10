@@ -1,4 +1,10 @@
-node (any) {
-  stage('test') {
-     sh 'date'
-     }
+pipeline {
+  agent {
+    any 
+  }
+  stages {
+   stage('test') {
+   sh 'date'
+   }
+  }
+}
