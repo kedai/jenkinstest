@@ -1,11 +1,4 @@
-pipeline {
- agent any {
-  stages {
-    stage('stage-1'){
-      steps {
-       sh 'date'
-      }
-    }
-  }
- }
-}
+node (any) {
+  stage('test') {
+     sh 'date'
+     }
